@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@800&display=swap');
+
+html,
+body {
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.App {
+  height: 100vh;
+}
+
+
+* {
+  font-family: 'Roboto Mono', monospace;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container__counter-father {
+  width: 100vw;
+  height: 100vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container__counter-child {
+  width:300px;
+  height:300px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+  color: #C9D6FF;
+  font-weight: bold;
+  font-family: 'Barlow', sans-serif;
+}
+
+.container__counter-buttons {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.container__counter-button {
+  margin: 5px;
+  border: none;
+  background-color: #539cb0;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 5px 10px 5px 10px;
+  transition: all 0.4s linear;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container__counter-button:hover{
+  background-color: #869da3;
+  box-shadow: 5px 2px #2e6880;
+  color: #ffffff;
+}
+
+.container__counter-button:active {
+  transform:scale(0.70);
+}
+
+.negative{
+  color: #ED213A;
+  animation: pulse 0.5s ease-in-out;
+}
+
+.positive{
+  color: #11998e;
+  animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
