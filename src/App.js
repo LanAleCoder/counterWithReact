@@ -21,13 +21,6 @@ function App() {
   );
 }
 
-function decrement() {
-  
-}
-
-function increment() {
-}
-
 
 
 export default App;
